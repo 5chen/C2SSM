@@ -1,19 +1,19 @@
 ## [CVPR 2026] Scan Clusters, Not Pixels: A Cluster-Centric Paradigm for Efficient Ultra-high-definition Image Restoration
 
-[Chen Wu]()<sup>1</sup>, [Ling Wang]()<sup>2</sup>, [Zhuoran Zheng]()<sup>3</sup>, [Yuning Cui]()<sup>4</sup>, [Zhixiong Yang]()<sup>1</sup>, [Xiangyu Chen]()<sup>5</sup>, [Yue Zhang]()<sup>6</sup>, [Weidong Jiang]()<sup>1</sup>, [Jingyuan Xia]()<sup>1,†</sup>
+[Chen Wu](https://github.com/5chen)<sup>1</sup>, [Ling Wang](https://daviswang0.github.io/)<sup>2</sup>, [Zhuoran Zheng](https://scholar.google.com.hk/citations?user=pXzPL-sAAAAJ&hl=zh-CN)<sup>3</sup>, [Yuning Cui](https://www.ce.cit.tum.de/en/air/people/yuning-cui/)<sup>4</sup>, [Zhixiong Yang]()<sup>1</sup>, [Xiangyu Chen](https://chxy95.github.io/)<sup>5</sup>, [Yue Zhang]()<sup>6</sup>, [Weidong Jiang](https://xplorestaging.ieee.org/author/37288834600)<sup>1</sup>, [Jingyuan Xia](https://www.xiajingyuan.com/)<sup>1,†</sup>
 
 <sup>1</sup>National University of Defense Technology, <sup>2</sup>HKUST(GZ), <sup>3</sup>Qilu University of Technology, <sup>4</sup>Technical University of Munich, <sup>5</sup>Institute of Artificial Intelligence (TeleAI), <sup>6</sup>Beihang University
 
 † Corresponding author
 
-**CVPR 2026** | [Paper](https://arxiv.org/abs/2602.21917) 
+**CVPR 2026** | [arXiv](https://arxiv.org/abs/2602.21917) | [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 ---
 
 ## Overview
 
 <p align="center">
-  <img src="figs/framework.pdf" width="90%">
+  <img src="figs/framework.png" width="90%">
 </p>
 
 Ultra-High-Definition (UHD) image restoration is trapped in a scalability crisis: existing models, bound to pixel-wise operations, demand unsustainable computation. While state space models (SSMs) like Mamba promise linear complexity, their pixel-serial scanning remains a fundamental bottleneck for the millions of pixels in UHD content.
