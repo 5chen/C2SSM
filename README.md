@@ -1,6 +1,6 @@
 ## [CVPR 2026] Scan Clusters, Not Pixels: A Cluster-Centric Paradigm for Efficient Ultra-high-definition Image Restoration
 
-[Chen Wu](https://github.com/5chen)<sup>1</sup>, [Ling Wang](https://daviswang0.github.io/)<sup>2</sup>, [Zhuoran Zheng](https://scholar.google.com.hk/citations?user=pXzPL-sAAAAJ&hl=zh-CN)<sup>3</sup>, [Yuning Cui](https://www.ce.cit.tum.de/en/air/people/yuning-cui/)<sup>4</sup>, [Zhixiong Yang]()<sup>1</sup>, [Xiangyu Chen](https://chxy95.github.io/)<sup>5</sup>, [Yue Zhang]()<sup>6</sup>, [Weidong Jiang](https://xplorestaging.ieee.org/author/37288834600)<sup>1</sup>, [Jingyuan Xia](https://www.xiajingyuan.com/)<sup>1,†</sup>
+[Chen Wu](https://github.com/5chen)<sup>1</sup>, [Ling Wang](https://daviswang0.github.io/)<sup>2</sup>, [Zhuoran Zheng](https://scholar.google.com.hk/citations?user=pXzPL-sAAAAJ&hl=zh-CN)<sup>3</sup>, [Yuning Cui](https://www.ce.cit.tum.de/en/air/people/yuning-cui/)<sup>4</sup>, [Zhixiong Yang](https://zhixiongyang21.github.io/)<sup>1</sup>, [Xiangyu Chen](https://chxy95.github.io/)<sup>5</sup>, [Yue Zhang]()<sup>6</sup>, [Weidong Jiang](https://xplorestaging.ieee.org/author/37288834600)<sup>1</sup>, [Jingyuan Xia](https://www.xiajingyuan.com/)<sup>1,†</sup>
 
 <sup>1</sup>National University of Defense Technology, <sup>2</sup>HKUST(GZ), <sup>3</sup>Qilu University of Technology, <sup>4</sup>Technical University of Munich, <sup>5</sup>Institute of Artificial Intelligence (TeleAI), <sup>6</sup>Beihang University
 
