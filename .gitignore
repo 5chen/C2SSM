@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+*.pth
+*.pt
+experiments/
+results/
+pretrained_models/
+datasets/
+*.log
+.vscode/
+.idea/
