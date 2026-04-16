@@ -217,10 +217,10 @@ class ClusterCentricScanningModule(nn.Module):
             x = rearrange(x, "b c (f1 h) (f2 w) -> (b f1 f2) c h w", f1=self.fold_hw,
                           f2=self.fold_hw)  # [bs*blocks,c,ks[0],ks[1]]
             value = rearrange(value, "b c (f1 h) (f2 w) -> (b f1 f2) c h w", f1=self.fold_hw, f2=self.fold_hw)
-        b, c, w, h = x.shape
+        b, c, h, w = x.shape
         centers = self.centers_proposal(x)  # [b,c,C_H,C_W], we set M = C_W*C_H and N = w*h
         value_centers = rearrange(self.centers_proposal(value), 'b c h w -> b (h w) c')  # [b,C_H,C_W,c]
-        b, c, ww, hh = centers.shape
+        b, c, hh, ww = centers.shape
 
         sim = torch.sigmoid(
             self.sim_beta +
