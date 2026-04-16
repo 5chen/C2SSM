@@ -211,7 +211,7 @@ class ClusterCentricScanningModule(nn.Module):
         value = rearrange(value, "b (e c) h w -> (b e) c h w", e=self.heads)
         if self.fold_hw > 1:
             # split the big feature maps to small local regions to reduce computations.
-            b0, c0, w0, h0 = x.shape
+            b0, c0, h0, w0 = x.shape
             assert w0 % self.fold_hw == 0 and h0 % self.fold_hw == 0, \
                 f"Ensure the feature map size ({w0}*{h0}) can be divided by fold {self.fold_hw}*{self.fold_hw}"
             x = rearrange(x, "b c (f1 h) (f2 w) -> (b f1 f2) c h w", f1=self.fold_hw,
@@ -283,7 +283,8 @@ class ClusterCentricScanningModule(nn.Module):
         x = self.act(self.conv2d(x))
         y = self.forward_core(x)
         assert y.dtype == torch.float32
-        y = torch.transpose(y, dim0=1, dim1=2).contiguous().view(B, H, W, -1)
+        # y = torch.transpose(y, dim0=1, dim1=2).contiguous().view(B, H, W, -1)
+        y = y.permute(0, 2, 3, 1).contiguous()
         y = self.out_norm(y)
         y = y * F.silu(z)
         out = self.out_proj(y)
